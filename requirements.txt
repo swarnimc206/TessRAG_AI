@@ -1,10 +1,13 @@
-google-generativeai>=0.3.1,<0.4.0
-langchain-google-genai==0.0.7
-streamlit
-langchain
-pypdf
-faiss-cpu
-python-dotenv
-pinecone
-chromadb
-unstructured
+streamlit>=1.32.0
+PyPDF2>=3.0.1
+langchain>=0.1.0
+langchain-google-genai>=0.0.7
+google-generativeai>=0.3.2
+python-dotenv>=1.0.0
+nltk>=3.8.1
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+faiss-cpu>=1.7.4  # Use "faiss-gpu" if deploying on GPU
+python-docx>=0.8.11
+pandas>=2.1.0
+pillow>=10.0.1
