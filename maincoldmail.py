@@ -13,11 +13,10 @@ import requests
 from bs4 import BeautifulSoup
 import traceback
 
-# Load environment variables
-load_dotenv()
-google_api_key = os.getenv("GOOGLE_API_KEY")
+# Load API key from Streamlit secrets
+google_api_key = st.secrets.get("GOOGLE_API_KEY")
 if not google_api_key:
-    st.error("GOOGLE_API_KEY not found in environment variables")
+    st.error("GOOGLE_API_KEY not found in Streamlit secrets.")
     st.stop()
 genai.configure(api_key=google_api_key)
 
