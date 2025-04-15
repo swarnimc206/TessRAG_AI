@@ -10,9 +10,11 @@ import pandas as pd
 import base64
 from PIL import Image
 
-# Configuration
-load_dotenv()
-google_api_key = os.getenv("GOOGLE_API_KEY")
+## Load API key from Streamlit secrets
+google_api_key = st.secrets.get("GOOGLE_API_KEY")
+if not google_api_key:
+    st.error("GOOGLE_API_KEY not found in Streamlit secrets.")
+    st.stop()
 genai.configure(api_key=google_api_key)
 
 # Sample Sign Language Database (would be larger in production)
