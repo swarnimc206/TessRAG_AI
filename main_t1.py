@@ -12,7 +12,7 @@ import mainsign
 
 # Set page configuration
 st.set_page_config(
-    page_title="Tesseract AI",
+    page_title="TessRAG AI",
     page_icon="🔮",
     layout="wide"
 )
@@ -31,7 +31,7 @@ PAGES = {
 
 with st.sidebar:
     st.image("tesseract_logo.png", width=220)
-    st.title("🔮 Tesseract AI")
+    st.title("🔮 TessRAG AI")
     selection = st.radio("Navigate to", list(PAGES.keys()))
 
 # Main Container
@@ -40,7 +40,7 @@ main_container = st.empty()
 # Home Page
 def show_home_page():
     with main_container.container():
-        st.markdown("<h1 style='color:#4B8BBE;'>Tesseract AI</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='color:#4B8BBE;'>TessRAG AI</h1>", unsafe_allow_html=True)
         st.markdown("### Enhancing LLM Reliability through Retrieval-Augmented and Context-Aware Generation")
 
         col1, col2 = st.columns([3, 1])
