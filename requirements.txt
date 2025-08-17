@@ -13,4 +13,9 @@ faiss-cpu>=1.7.4
 python-docx>=0.8.11
 pandas>=2.1.0
 pillow>=10.0.1
-sentence-transformer
+
+
+
+sentence-transformers>=2.2.2
+openai>=1.3.7
+
